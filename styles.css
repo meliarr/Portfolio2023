@@ -3,7 +3,7 @@
 ----- Portfolio Page -----
 
 Author: Melissa Arroyo
-Last Updated: August 29, 2020
+Last Updated: January 2023
 File name: styles.css
 
 */
@@ -15,3 +15,47 @@ body {
     margin: 0;
     padding: 0;
 }
+
+nav {
+  background-color: #cfcece;
+}
+
+ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+h1 {
+  color: brown;
+}
+
+h1 span {
+    color: blue;
+}
+
+
+/* ---------------- NAVIGATION STYLES ------------------ */
+.Nav_logoImg {
+    width: 100px;
+    height: auto;
+}
+
+.Nav_navList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .Nav_navList {
+    flex-direction: row;
+  }
+  .Nav_navList li {
+    margin: 10px 20px;
+  }
+}
+
+/* -------------- HERO SECTION STYLES ------------------ */
+/* -------------- WORK SECTION STYLES ------------------ */
+/* -------------- ABOUT SECTION STYLES ----------------- */
+/* -------------- FOOTER SECTION STYLES ---------------- */
