@@ -17,20 +17,35 @@ body {
 }
 
 nav {
-  background-color: #cfcece;
+  background-color: #ffffff;
 }
 
 ul li a {
-  color: red;
+  color: rgb(138, 40, 213);
   text-decoration: none;
 }
 
 h1 {
-  color: brown;
+  font-family: 'Lato', sans-serif;
+  color: #666666 !important;
+  font-weight: 300 !important;
+  font-size: 55px !important;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 span {
-    color: blue;
+  font-weight: 900 !important;
+  font-size: 62px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+ul li,
+p {
+  color: #666666 !important;
 }
 
 .container {
@@ -63,18 +78,23 @@ h1 span {
 
 .Hero_Section {
   height: 80vh;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 0;
 }
 
 .Hero_Section::before {
   content: '';
   position: absolute;
-  width: 200px;
+  width: 23%;
   height: 100%;
-  background-color: #eaeaea;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239f3fff' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   left: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
+  opacity: .25;
 }
 
 .Hero_Wrapper {
@@ -110,7 +130,7 @@ h1 span {
   position: absolute;
   width: 300px;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 6/4;
   z-index: 1;
   bottom: 10%;
   left: -30%;
@@ -131,12 +151,51 @@ h1 span {
     margin: 0 20px 0 0;
   }
 }
+
 /* -------------- WORK SECTION STYLES ------------------ */
 
 .Work_Section {
-  background-color: #dad7d7;
+  background-color: #eaeaea;
   height: 50vh;
 }
 
+.Work_SectionList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Work_SectionList div {
+  width: 25%;
+  border: 1px solid black;
+}
+
 /* -------------- ABOUT SECTION STYLES ----------------- */
+
+.About_Section {
+  height: 50vh;
+  position: relative;
+  z-index: 0;
+}
+
+.About_Section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239f3fff' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .25;
+}
 /* -------------- FOOTER SECTION STYLES ---------------- */
+
+.Footer_Section {
+  height: 10vh;
+  background-color: #eaeaea;
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Melissa Arroyo | Kansas City Web Designer, Developer, Marketer</title>
     <link rel="stylesheet" href="styles.css">
@@ -37,13 +36,11 @@
                 <img class="Nav_logoImg" src="/img/header-logo.jpeg" alt="Logo"></img>
             </div>
             <div>
-                <nav>
-                    <ul class="Nav_navList">
-                        <li><a href="">Work</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+                <ul class="Nav_navList">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Send a Message</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -53,18 +50,16 @@
                 <div class="Hero_Wrapper row">
                     <div class="Hero_WrapperContent col-lg-6">
                         <div class="Hero_Content">
-                            <h1 class="d-flex flex-column">
-                                Your Vision
-                                <span>is aligned with my mission</span>
+                            <h1 class="d-flex flex-row flex-wrap">
+                                Let&apos;s Make It
+                                <span>&nbsp;Happen</span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Welcome to my page! I'm a KC-based Front End Developer with 5 years of experience in web design, digital marketing, and building websites for various audiences. Learn more about me and get connected!
                             </p>
                             <ul class="Hero_IconsList list-unstyled">
-                                <li><a href="">LinkedIn</a></li>
-                                <li><a href="">Github</a></li>
-                                <li><a href="">Codepen</a></li>
-                                <li><a href="">Email</a></li>
+                                <li><a href="">View Past Work</a></li>
+                                <li><a href="">Connect on LinkedIn</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,14 +72,28 @@
                 </div>
             </div>
         </div>
-        <div class="Work_Section">
-            work
+        <div id="work" class="Work_Section py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h1>Portfolio<span>Gallery</span></h1>
+                    <p>A collection of my work in Web Design, Web Development, and Content Creation</p>
+                </div>
+                <div class="Work_SectionList">
+                    <div>SHPE KC</div>
+                    <div>SUSAN</div>
+                    <div>KC Women in Tech</div>
+                    <div>ReFrame Financial</div>
+                </div>
+            </div>
         </div>
-        <div>
+        <div id="about" class="About_Section py-5">
             about
+            <div id="contact">
+                contact me!
+            </div>
         </div>
-        <footer>
-            <span>Made by Me</span>
+        <footer class="Footer_Section py-2">
+            <span>Website footer. Made by Me</span>
         </footer>
     </main>
     <script src="scripts.js"></script>
