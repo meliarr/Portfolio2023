@@ -30,51 +30,45 @@
 </head>
 <!-- BEGIN BODY -->
 <body>
-    <nav>
-        <div class="container d-flex flex-row justify-content-end align-items-center">
-            <div>
-                <ul class="Nav_navList">
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Send a Message</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main class="col-12 d-flex flex-column flex-lg-row">
-        <aside class="Aside_section p-5">
-            <div class="w-100 d-flex justify-content-center">
-                <img class="Aside_logoImg" src="/img/header-logo.jpeg" alt="Logo"></img>
-            </div>
-            <div class="Aside_content">
-                <h1>Melissa<span>Arroyo</span></h1>
+    <header>
+        <nav class="container justify-content-end align-items-center pt-3">
+            <ul class="list-unstyled d-flex flex-row justify-content-evenly">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Send a Message</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="col-12 d-flex flex-column">
+        <div class="hero-section">
+            <img class="hero-sectionLogo" src="/img/header-logo.jpeg" alt="Logo"></img>
+            <div class="hero-sectionContent">
+                <h1>Melissa Arroyo</h1>
                 <p>Wed Designer | Front End Developer</p>
-                <p>A collection of my work in Web Design, Web Development, and Content Creation</p>
-                <ul class="list-unstyled">
-                    <li>
-                      <a href="https://www.linkedin.com/in/arroyo-melissa/" target="_blank">
-                        Connect with me! <span>LI logo</span>
-                      </a>
+                <p>A collection of my work in web design, web development, and digital illustrations</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="hero-sectionBtn">
+                        <a href="https://www.linkedin.com/in/arroyo-melissa/" target="_blank">
+                            Connect with me! <span>LI logo</span>
+                        </a>
                     </li>
-                    <li>
+                    <li class="hero-sectionBtn">
                         <a href="https://github.com/meliarr" target="_blank">
                             Github <span>GH logo</span>
                         </a>
                     </li>
                 </ul>
             </div>
-        </aside>
-        <div id="work" class="Work_Section p-1 p-md-5">
-            <div class="Work_SectionGrid">
-                <div class="Work_SectionCard card-shpekc">SHPE KC</div>
-                <div class="Work_SectionCard card-srks">SUSAN</div>
-                <div class="Work_SectionCard card-trinity">Trinity</div>
-                <div class="Work_SectionCard card-reframe">ReFrame Financial</div>
-                <div class="Work_SectionCard card-cudlipp">Cuddlip Financial</div>
-            </div>
+        </div>
+        <div id="work" class="container Work_Section p-1 p-md-5">
+            <div class="Work_SectionCard card-shpekc">SHPE KC</div>
+            <div class="Work_SectionCard card-srks">SUSAN</div>
+            <div class="Work_SectionCard card-trinity">Trinity</div>
+            <div class="Work_SectionCard card-reframe">ReFrame Financial</div>
+            <div class="Work_SectionCard card-cudlipp">Cuddlip Financial</div>
         </div>
     </main>
-    <footer class="Footer_Section py-2">
+    <footer class="Footer_Section py-2 container">
         <span>Website footer. Made by Me</span>
     </footer>
     <script src="scripts.js"></script>
