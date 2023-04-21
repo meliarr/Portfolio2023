@@ -3,8 +3,15 @@
 ----- Portfolio Page -----
 
 Author: Melissa Arroyo
-Last Updated: January 2023
+Last Updated: April 2023
 File name: styles.css
+
+Font Family: 
+font-family: "stratos", sans-serif;
+font-weight: 400, 700
+font-family: "stratos-lights", sans-serif;
+font-weight: 400
+font-style: normal, italic
 
 */
 
@@ -14,8 +21,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    /*background-image: linear-gradient(to right top, #e0e0d6, #c7bbb0, #af9792, #91757d, #6a586d);*/
     background-image: linear-gradient(to top, #e0e0d6, #c7bbb0, #af9792, #91757d, #6a586d);
+    font-family: "stratos", sans-serif;
 }
 
 nav {
