@@ -12,6 +12,9 @@ font-weight: 400, 700
 font-family: "stratos-lights", sans-serif;
 font-weight: 400
 font-style: normal, italic
+font-family: "larken", sans-serif;
+font-weight: 400, 700, 800
+font-style: normal, italic
 
 */
 
@@ -21,17 +24,29 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #AEA9BB !important;
-    font-family: "stratos", sans-serif !important;
+    background-color: #222222 !important;
+    font-family: "larken", sans-serif !important;
     color: #333030 !important;
+    position: relative;
+    z-index: 0;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+}
 nav {
   height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #9c88ff;
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+  background-color: transparent;
 }
 
 nav ul {
@@ -39,26 +54,40 @@ nav ul {
   width: 100%;
 }
 
-ul li a {
-  font-weight: 700;
+nav ul li a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #333030;
+  text-transform: lowercase;
+  color: #FFE9B1;
+  letter-spacing: 1px;
+  font-family: stratos-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 2000ms;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #FFE9B1;
+  margin-top: 8px;
+  transition: 2000ms;
 }
 
 h1 {
   font-weight: 700 !important;
-  font-size: 48px !important;
-  text-transform: uppercase;
+  font-size: 66px !important;
+  text-transform: capitalize;
   letter-spacing: 0;
   display: flex;
   flex-direction: column;
 }
 
 h2 {
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   font-size: 20px !important;
   letter-spacing: .5px;
+  font-family: stratos-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: lowercase;
 }
 
 ul li,
@@ -72,8 +101,13 @@ p {
 
 footer {
   height: 5vh;
-  border-top: 1px solid #9c88ff;
+  border-top: 1px solid rgb(255 255 255 / 15%);
   text-align: center;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3000ms;
+  --animate-delay: 2s;
 }
 
 
@@ -83,40 +117,58 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/diagonal-striped-brick.png");
-}
-
-.hero-sectionLogo {
-  width: 65%;
-  border-right: 15px solid #9c88ff;
+  background-image: url("/img/placeholder-img.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .hero-sectionContent {
   padding: 30px;
-  margin-left: -7rem;
-  background-color: #AEA9BB;
-  color: #2f3640 !important;
+  color: #FFFFFF !important;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.hero-sectionContent h2 {
+  background-color: rgb(255 233 177 / 13%);
+  width: fit-content;
+  padding: 5px 8px;
+  color: #FFE9B1;
+}
 .hero-sectionContent p {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .hero-sectionBtn {
-  border: 1.5px solid #333030;
+  border: 1.5px solid #FFE9B1;
   margin: 0 10px 0 0;
   transition: 500ms;
 }
 
 .hero-sectionBtn:hover {
-  background-color: #9c88ff;
+  background-color: rgb(255 233 177 / 13%);
   transition: 500ms;
 }
 
 .hero-sectionBtn a {
   display: block;
   margin-left: 10px;
-  color: #333030;
+  color: #FFE9B1;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: stratos-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero-sectionBtn img {
@@ -124,7 +176,7 @@ footer {
   height: 40px;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-left: 1.5px solid #333030;
+  border-left: 1.5px solid #FFE9B1;
   margin-left: 10px;
 }
 
@@ -140,18 +192,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #23110e;
 }
 
 .Work_SectionCard {
   display: flex;
   width: 100%;
-  background-color: #9c88ff;
+  background-color: #beb9cb;
+  background-image: url("/img/diagonal-striped-brick.png");
   margin: 50px;
-  border: 1px solid #333030;
 }
 
 .Work_SectionContent {
-  border-right: 1px solid #333030;
+  border-right: 5px solid #9c88ff;
 }
 
 .Work_SectionImage {
