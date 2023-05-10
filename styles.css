@@ -72,8 +72,8 @@ nav ul li a:hover {
 }
 
 h1 {
-  font-weight: 700 !important;
-  font-size: 66px !important;
+  font-weight: 700;
+  font-size: 66px;
   text-transform: capitalize;
   letter-spacing: 0;
   display: flex;
@@ -81,8 +81,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 400 !important;
-  font-size: 20px !important;
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: .5px;
   font-family: stratos-lights, sans-serif;
   font-weight: 400;
@@ -119,7 +119,7 @@ footer {
   align-items: center;
   background-image: url("/img/placeholder-img.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 80vh;
   position: relative;
@@ -138,11 +138,17 @@ footer {
   align-items: center;
 }
 
+.hero-sectionContent h1 {
+  font-weight: 700;
+  font-size: 66px;
+}
 .hero-sectionContent h2 {
   background-color: rgb(255 233 177 / 13%);
   width: fit-content;
   padding: 5px 8px;
   color: #FFE9B1;
+  margin-bottom: 28px;
+  font-size: 20px;
 }
 .hero-sectionContent p {
   font-size: 16px;
@@ -195,16 +201,29 @@ footer {
   background-color: #23110e;
 }
 
+.Work_SectionTitle {
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffe9b1' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.Work_SectionTitle h4 {
+  font-size: 15px;
+  font-family: 'stratos', sans-serif;
+}
+
+.Work_SectionTitle h2 {
+  font-size: 42px;
+  font-family: 'larken', serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
 .Work_SectionCard {
   display: flex;
   width: 100%;
-  background-color: #beb9cb;
-  background-image: url("/img/diagonal-striped-brick.png");
   margin: 50px;
-}
-
-.Work_SectionContent {
-  border-right: 5px solid #9c88ff;
+  border: 1px solid #FFE9B1;
+  color: #FFE9B1;
 }
 
 .Work_SectionImage {
