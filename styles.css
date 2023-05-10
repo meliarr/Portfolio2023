@@ -24,7 +24,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #222222 !important;
+    background-color: #23110e !important;
     font-family: "larken", sans-serif !important;
     color: #333030 !important;
     position: relative;
@@ -198,7 +198,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #23110e;
 }
 
 .Work_SectionTitle {
@@ -239,5 +238,5 @@ footer {
 
 .Footer_Section {
   height: 10vh;
-  color: #333030;
+  color: #FFE9B1;
 }
