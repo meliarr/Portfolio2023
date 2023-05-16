@@ -71,6 +71,10 @@ nav ul li a:hover {
   transition: 2000ms;
 }
 
+p a {
+  color: #FFFFFF;
+}
+
 h1 {
   font-weight: 700;
   font-size: 66px;
@@ -78,6 +82,7 @@ h1 {
   letter-spacing: 0;
   display: flex;
   flex-direction: column;
+  color: #FFE9B1;
 }
 
 h2 {
@@ -93,6 +98,7 @@ h2 {
 ul li,
 p {
   font-family: stratos, sans-serif;
+  letter-spacing: .5px;
 }
 
 .container {
@@ -108,6 +114,34 @@ footer {
 .animate__animated.animate__fadeIn {
   --animate-duration: 3000ms;
   --animate-delay: 2s;
+}
+
+.SectionHeading {
+  background-color: rgb(255 233 177 / 13%);
+  width: fit-content;
+  padding: 5px 8px;
+  color: #FFE9B1;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: 'Larken', Serif;
+  text-align: center;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+ 
+@media (min-width: 992px) {
+  .SectionHeading {
+    font-size: 40px;
+  }
 }
 
 
@@ -148,24 +182,33 @@ footer {
   padding: 5px 8px;
   color: #FFE9B1;
   margin-bottom: 28px;
-  font-size: 20px;
+  font-size: 17px;
+  font-family: 'stratos-lights', sans-serif;
 }
 .hero-sectionContent p {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
+.work-sectionBtn,
 .hero-sectionBtn {
   border: 1.5px solid #FFE9B1;
-  margin: 0 10px 0 0;
+  margin: 5px;
   transition: 500ms;
+  width: fit-content;
 }
 
+.work-sectionBtn {
+  width: 100%;
+}
+
+.work-sectionBtn:hover,
 .hero-sectionBtn:hover {
   background-color: rgb(255 233 177 / 13%);
   transition: 500ms;
 }
 
+.work-sectionBtn a,
 .hero-sectionBtn a {
   display: block;
   margin-left: 10px;
@@ -175,21 +218,45 @@ footer {
   font-family: stratos-lights, sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 0;
 }
 
+.work-sectionBtn a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-sectionBtn img {
+  width: auto;
+  height: 20px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-left: 10px;
+}
 .hero-sectionBtn img {
   width: 40px;
   height: 40px;
-  aspect-ratio: 1/1;
   object-fit: cover;
   border-left: 1.5px solid #FFE9B1;
   margin-left: 10px;
+}
+
+.work-sectionBtn a {
+  padding: 10px;
+  margin: 0;
 }
 
 @media (min-width: 992px) {
  .hero-section {
    text-align: left;
    flex-direction: row;
+ }
+ .hero-sectionBtn {
+    margin: 0 10px 0 0;
+ }
+ .hero-sectionContent h2 {
+   font-size: 20px;
  }
 }
 
@@ -198,9 +265,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 .Work_SectionTitle {
+  padding: 30px;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffe9b1' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -219,20 +288,86 @@ footer {
 
 .Work_SectionCard {
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 50px;
   border: 1px solid #FFE9B1;
   color: #FFE9B1;
 }
 
+.Work_SectionContent,
 .Work_SectionImage {
-  max-height: 60vh;
   overflow-y: scroll;
+}
+
+.Work_SectionImage {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 6/4;
 }
 
 .Work_SectionImage img {
   width: 100%;
 }
+
+@media (min-width: 992px) {
+  .Work_SectionCard {
+    flex-direction: row;
+    height: 60vh;
+  }
+}
+
+/* -------------- ABOUT SECTION STYLES ---------------- */
+
+.About_Section {
+ padding: 30px 0;
+ display: flex;
+ flex-direction: column;
+}
+
+.About_Section p {
+  color: #FFE9B1;
+}
+
+.AboutPhoto {
+  margin-top: 40px;
+  aspect-ratio: 1/1;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+.About_Section h3 {
+  color: #FFE9B1;
+  border-bottom: 1px solid #FFE9B1;
+  padding: 5px 10px;
+  text-align: center;
+  letter-spacing: .5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffe9b1' fill-opacity='0.21' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.About_SectionList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.About_SectionList li {
+  margin-bottom: 10px;
+  width: 50%;
+  color: #FFE9B1;
+}
+
+@media (min-width: 992px) {
+  .About_Section {
+    flex-direction: row;
+    padding: 90px 0;
+  }
+}
+
 
 /* -------------- FOOTER SECTION STYLES ---------------- */
 
