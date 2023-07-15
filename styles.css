@@ -3,7 +3,7 @@
 ----- Portfolio Page -----
 
 Author: Melissa Arroyo
-Last Updated: May 2023
+Last Updated: July 2023
 File name: styles.css
 
 Font Family: 
@@ -308,12 +308,15 @@ footer {
 
 .Work_SectionImage img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
 }
 
 @media (min-width: 992px) {
   .Work_SectionCard {
     flex-direction: row;
-    height: 60vh;
+    height: fit-content;
   }
 }
 
