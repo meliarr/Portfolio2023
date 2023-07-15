@@ -295,9 +295,8 @@ footer {
   color: #FFE9B1;
 }
 
-.Work_SectionContent,
 .Work_SectionImage {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .Work_SectionImage {
